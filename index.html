@@ -1,124 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Punkeshwari Joshi | Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Punkeshwari Joshi | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-6">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">Punkeshwari Joshi</h1>
+      <p class="text-sm mt-2">Aspiring Data Entry & Computer Science Enthusiast</p>
+    </div>
+  </header>
 
-    <!-- React & ReactDOM -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Personal Info -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-2">Contact</h2>
+    <ul class="list-disc ml-6">
+      <li>Phone: +91 9108500630</li>
+      <li>Nationality: Indian</li>
+    </ul>
+  </section>
 
-    <!-- Framer Motion -->
-    <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
-  </head>
+  <!-- Career Objective -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-2">Career Objective</h2>
+    <p>
+      Motivated and detail-oriented individual with strong computer proficiency and multilingual communication skills, seeking an entry-level position in data entry or back-office operations. Eager to contribute to organizational efficiency with fast and accurate typing, and a strong commitment to quality and deadlines.
+    </p>
+  </section>
 
-  <body class="bg-gray-100 text-gray-900">
-    <div id="root"></div>
+  <!-- Education -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-2">Education</h2>
+    <p><strong>Taproot PU College</strong> – Present</p>
+  </section>
 
-    <script type="text/javascript">
-      const { motion } = window['framer-motion'];
-      const { useEffect } = React;
+  <!-- Skills -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-2">Skills</h2>
+    <div class="grid grid-cols-2 gap-4">
+      <ul class="list-disc ml-6">
+        <li>Data Entry</li>
+        <li>Typing</li>
+        <li>Cloud Storage (Google Drive)</li>
+        <li>Digital Platforms</li>
+      </ul>
+      <ul class="list-disc ml-6">
+        <li>MS Office Suite</li>
+        <li>Excel, PowerPoint, Google Docs</li>
+        <li>Presentations & Reports</li>
+        <li>Computer Science Basics</li>
+      </ul>
+    </div>
+  </section>
 
-      function App() {
-        useEffect(() => {
-          document.title = "Punkeshwari Joshi | Portfolio";
-        }, []);
+  <!-- Projects / Experience -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-2">Projects / Internship Experience</h2>
+    <ul class="list-disc ml-6">
+      <li>Digital Notes Organizer – Maintained structured digital notes for exam prep</li>
+      <li>Group Report Typing – Lead role in formatting and typing college assignments</li>
+      <li>Data Entry for College Projects – Regular academic typing and formatting</li>
+    </ul>
+  </section>
 
-        const projects = [
-          { title: "UI Design Kit", desc: "Modern UI Kit for dashboards." },
-          { title: "Portfolio v2", desc: "Animated, responsive portfolio." },
-          { title: "E-commerce UI", desc: "Shopping interface with cart logic." },
-          { title: "Blog CMS", desc: "Minimal blog with markdown support." },
-        ];
+  <!-- Languages -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-2">Languages</h2>
+    <p>English, Hindi, Kannada, Bengali</p>
+  </section>
 
-        const skills = [
-          "HTML5", "CSS3", "JavaScript", "React",
-          "Figma", "Tailwind CSS", "UI/UX Design"
-        ];
+  <!-- Hobbies & Awareness -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-2">Digital Awareness</h2>
+    <p>
+      Familiar with safe and efficient use of computers, internet browsing, file management, and online tools. Knowledgeable in basic cybersecurity like avoiding suspicious links, using strong passwords, and handling data securely.
+    </p>
+  </section>
 
-        return (
-          React.createElement("main", { className: "p-6 font-sans" },
-            React.createElement("section", {
-              className: "text-center py-20 bg-white shadow-md rounded-2xl"
-            },
-              React.createElement(motion.h1, {
-                className: "text-5xl font-bold mb-4",
-                initial: { opacity: 0, y: -50 },
-                animate: { opacity: 1, y: 0 },
-                transition: { duration: 0.6 }
-              }, "Hi, I'm Punkeshwari Joshi"),
-              React.createElement("p", {
-                className: "text-lg mb-6 text-gray-600"
-              }, "Frontend Developer | UI/UX Designer | Creative Thinker"),
-              React.createElement("a", {
-                href: "#",
-                className: "bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full"
-              }, "Download Resume")
-            ),
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center p-4 mt-10">
+    <p>&copy; 2025 Punkeshwari Joshi. All Rights Reserved.</p>
+  </footer>
 
-            React.createElement("section", { className: "mt-20" },
-              React.createElement("h2", {
-                className: "text-3xl font-semibold mb-6 text-center"
-              }, "Projects"),
-              React.createElement("div", {
-                className: "grid gap-6 md:grid-cols-2"
-              },
-                projects.map((project, idx) =>
-                  React.createElement("div", {
-                    key: idx,
-                    className: "bg-white p-6 rounded-xl shadow"
-                  },
-                    React.createElement("h3", { className: "text-xl font-bold mb-2" }, project.title),
-                    React.createElement("p", { className: "text-gray-600" }, project.desc)
-                  )
-                )
-              )
-            ),
-
-            React.createElement("section", { className: "mt-20" },
-              React.createElement("h2", {
-                className: "text-3xl font-semibold mb-6 text-center"
-              }, "Skills & Tools"),
-              React.createElement("div", {
-                className: "flex flex-wrap justify-center gap-4 text-sm text-gray-700"
-              },
-                skills.map((skill, idx) =>
-                  React.createElement("span", {
-                    key: idx,
-                    className: "bg-white px-4 py-2 rounded-full shadow"
-                  }, skill)
-                )
-              )
-            ),
-
-            React.createElement("section", {
-              className: "mt-20 text-center"
-            },
-              React.createElement("h2", {
-                className: "text-3xl font-semibold mb-4"
-              }, "Let's Connect"),
-              React.createElement("p", {
-                className: "text-gray-600 mb-4"
-              }, "punkeshwari.joshi@gmail.com"),
-              React.createElement("a", {
-                href: "mailto:punkeshwari.joshi@gmail.com",
-                className: "bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full"
-              }, "Contact Me")
-            ),
-
-            React.createElement("footer", {
-              className: "mt-20 text-center text-gray-400 text-sm"
-            }, "© 2025 Punkeshwari Joshi. All rights reserved.")
-          )
-        );
-      }
-
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(React.createElement(App));
-    </script>
-  </body>
+</body>
 </html>
